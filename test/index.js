@@ -24,10 +24,8 @@ describe('whilst', () => {
     let result = [];
     let i = 0;
     return whilst(() => i < 3, () => {
-      return Promise.resolve().then(() => {
-        result.push(i);
-        return i++;
-      });
+      result.push(i);
+      return Promise.resolve(i++);
     }).then(finalResult => {
       assert.deepEqual(result, [0, 1, 2]);
       assert.equal(finalResult, 2);
