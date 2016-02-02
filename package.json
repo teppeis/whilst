@@ -1,0 +1,17 @@
+{
+  "name": "whilst",
+  "version": "1.0.0",
+  "description": "While loop for async function with Promise",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "promise"
+  ],
+  "author": "Teppei Sato <teppeis@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
+}
