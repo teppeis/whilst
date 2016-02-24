@@ -1,10 +1,10 @@
 {
   "name": "whilst",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "While loop for async function with Promise",
   "main": "index.js",
-  "engines" : {
-    "node" : ">=4.0.0"
+  "engines": {
+    "node": ">=4.0.0"
   },
   "scripts": {
     "test": "mocha --require intelli-espower-loader"
