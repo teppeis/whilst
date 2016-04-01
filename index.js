@@ -10,14 +10,12 @@ function whilst(condition, action) {
   return resolve(function loop(res) {
     return resolve(() => {
       if (condition()) {
-        return resolve(() => {
-          return action();
-        }).then(loop);
+        return resolve(() => action()).then(loop);
       } else {
         return res;
       }
     });
   });
-};
+}
 
 module.exports = whilst;
