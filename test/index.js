@@ -4,10 +4,6 @@ const assert = require('power-assert');
 const whilst = require('../');
 
 describe('whilst', () => {
-  it('should be a function', () => {
-    assert(typeof whilst === 'function');
-  });
-
   it('with a sync action', () => {
     let result = [];
     let i = 0;
@@ -32,7 +28,7 @@ describe('whilst', () => {
     });
   });
 
-  it('with an async error', (done) => {
+  it('with an async error', done => {
     let result = [];
     let i = 0;
     return whilst(() => i < 3, () => {
