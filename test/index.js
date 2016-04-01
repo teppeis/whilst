@@ -31,15 +31,13 @@ describe('whilst', () => {
   it('with an async error', done => {
     let result = [];
     let i = 0;
-    return whilst(() => i < 3, () => {
-      return Promise.resolve().then(() => {
-        if (i > 1) {
-          throw new Error('foo');
-        }
-        result.push(i);
-        return i++;
-      });
-    }).catch(e => {
+    return whilst(() => i < 3, () => Promise.resolve().then(() => {
+      if (i > 1) {
+        throw new Error('foo');
+      }
+      result.push(i);
+      return i++;
+    })).catch(e => {
       assert.deepEqual(result, [0, 1]);
       assert(e instanceof Error);
       assert.equal(e.message, 'foo');

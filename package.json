@@ -1,26 +1,35 @@
 {
   "name": "whilst",
-  "version": "1.0.1",
   "description": "While loop for async function with Promise",
-  "main": "index.js",
+  "version": "1.0.1",
+  "author": "Teppei Sato <teppeis@gmail.com>",
   "engines": {
     "node": ">=4.0.0"
   },
-  "scripts": {
-    "test": "mocha --require intelli-espower-loader"
-  },
-  "keywords": [
-    "promise"
+  "main": "index.js",
+  "files": [
+    "index.js"
   ],
-  "author": "Teppei Sato <teppeis@gmail.com>",
-  "license": "MIT",
+  "scripts": {
+    "lint": "eslint index.js test",
+    "test": "npm run lint && mocha --require intelli-espower-loader"
+  },
   "devDependencies": {
+    "eslint": "^2.5.3",
+    "eslint-config-teppeis": "^1.1.0",
+    "eslint-plugin-node": "^1.0.0",
     "intelli-espower-loader": "^1.0.1",
     "mocha": "^2.4.5",
     "power-assert": "^1.2.0"
   },
+  "homepage": "https://github.com/teppeis/eslint-config-teppeis",
   "repository": {
     "type": "git",
     "url": "git://github.com/teppeis/whilst.git"
-  }
+  },
+  "bugs": "https://github.com/teppeis/eslint-config-teppeis/issues",
+  "keywords": [
+    "promise"
+  ],
+  "license": "MIT"
 }
