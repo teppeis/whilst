@@ -1,7 +1,12 @@
-whilst [![NPM version][npm-image]][npm-url] [![build status][travis-image]][travis-url] [![Dependency Status][deps-image]][deps-url]
+whilst
 ====
 
-> While loop for async function with Promise 
+While loop for async function with Promise 
+
+[![NPM version][npm-image]][npm-url]
+[![build status][travis-image]][travis-url]
+[![Dependency Status][deps-image]][deps-url]
+![MIT License][license]
 
 ## Install
 
@@ -34,3 +39,4 @@ MIT License: Teppei Sato &lt;teppeis@gmail.com&gt;
 [travis-url]: https://travis-ci.org/teppeis/whilst
 [deps-image]: https://david-dm.org/teppeis/whilst.svg
 [deps-url]: https://david-dm.org/teppeis/whilst
+[license]: https://img.shields.io/npm/l/whilst.svg
