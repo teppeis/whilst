@@ -4,6 +4,7 @@ whilst
 While loop for async function with Promise 
 
 [![NPM version][npm-image]][npm-url]
+![Node.js Version Support][node-version]
 [![build status][travis-image]][travis-url]
 [![Dependency Status][deps-image]][deps-url]
 ![MIT License][license]
@@ -35,6 +36,7 @@ MIT License: Teppei Sato &lt;teppeis@gmail.com&gt;
 
 [npm-image]: https://img.shields.io/npm/v/whilst.svg
 [npm-url]: https://npmjs.org/package/whilst
+[node-version]: https://img.shields.io/badge/Node.js%20support-v4,v6+-brightgreen.svg
 [travis-image]: https://travis-ci.org/teppeis/whilst.svg?branch=master
 [travis-url]: https://travis-ci.org/teppeis/whilst
 [deps-image]: https://david-dm.org/teppeis/whilst.svg
