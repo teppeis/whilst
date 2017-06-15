@@ -1,6 +1,8 @@
 whilst
 ====
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/teppeis/whilst.svg)](https://greenkeeper.io/)
+
 While loop for async function with Promise 
 
 [![NPM version][npm-image]][npm-url]
